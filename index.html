@@ -15,49 +15,51 @@
         <header>
          <nav>
              <!---------------Top Nav----------------->
-        <ul class="topnav">
-            <img src="img/udemy-logo.png" width="110px" height="30px" alt="">
-            <li> <a class="active" href="#categories">Categories</a> </li> 
+         <div class="nav-container">
+            <img src="img/udemy-logo.png" width="110px" height="30px">
+             <a class="active" href="#categories">Categories</a>  
             <div class="search"> 
-             <i class="far fa-search"></i>
+            <button class="btn"><i class="far fa-search"></i></button> 
             <input type="text" placeholder=" Search for anything" name="search"> 
             </div> 
-            <li> <a href="#business">Udemy for Business</a></li>
-            <li> <a href="#teach">Teach on Udemy</a></li>
-            <li> <a href="#teach">My Learning</a></li>
-            <li> <i class="far fa-heart"></i> </li>
-            <li> <i class="far fa-shopping-cart"></i></li>
-            <li> <i class="far fa-bell"></i> <span class="red">1</span> </li>       
-            <li><span>IO</span></li>
-        </ul>
+             <a href="#business">Udemy for Business</a>
+             <a href="#teach">Teach on Udemy</a>
+             <a href="#teach">My Learning</a>
+             <i class="far fa-heart"></i> 
+             <i class="far fa-shopping-cart"></i>
+             <i class="far fa-bell"><span class="red"></span> </i>        
+            <span>IO</span>
+         </div>
          </nav>
+         <hr> 
          <!---------------Bottom Nav----------------->
-        <nav>   
-        <ul class="bottomnav">
-            <li> <a href="#business">Development</a></li>
-            <li> <a href="#teach">Business</a></li>
-            <li> <a href="#teach">Finance and Accounting</a></li>
-            <li> <a href="#business">IT & Software</a></li>
-            <li> <a href="#teach">Office Productivity</a></li>
-            <li> <a href="#teach">Personal Development</a></li>
-            <li> <a href="#marketing">Marketing</a></li>
-            <li> <a href="#health">Health & Finance</a></li>
-            <li> <a href="#music">Music</a></li>
-            </ul>
-    </nav>
+        <nav>    
+         <div class="bottomnav">
+             <a href="#business">Development</a>
+             <a href="#teach">Business</a>
+             <a href="#teach">Finance and Accounting</a>
+             <a href="#business">IT & Software</a>
+             <a href="#teach">Office Productivity</a>
+             <a href="#teach">Personal Development</a>
+             <a href="#marketing">Marketing</a>
+             <a href="#health">Health & Finance</a>
+             <a href="#music">Music</a>
+         </div>
+        </nav>
      </header> 
      <!---------------Main Wor for Bg- Image----------------->
      <section class="bg-images">
-     <main> </main>
-     <div class="card-ads">
-        <div class="card-content">
-        <h1>Aspire for more</h1>
-        <p>Learning keeps you in the lead. Get in-demand skills to impress anyone.</p>
-       </div>
-    </div>
+     <div class="bg-container">
+            <div class="card-content">
+            <h1>Aspire for more</h1>
+            <p>Learning keeps you in the lead. Get in-demand skills to impress anyone.</p>
+           </div>
+     </div>
+    
     </section>
     <!---------------Courses Ads----------------->
     <section class="courses-ads">
+        <div class="sub-section" id="course-ads">
        <h2>What to learn next</h2>
         <div class="sub-ads">
                 <h3>Popular for leaders</h3>
@@ -67,10 +69,27 @@
             <p class="new-tag">New</p>
             <p class="sub-tag">Inspired by your selection</p>
         </div>
+    </div>
         <div class="Main-Ads">
             <div class="ad1">
-                <img src="img/course1.png" width="240px" height="150px" >
-                <div class="advert">
+                <div class="modal">
+                    <h1>Management Skills <br> Leadership Skills class</h1>
+                    <p class="rate2">Bestseller</p> 
+                    <p class="rate-content">Leadership & Management Skills - Change <br>Management - Lean  BPM Management Skills - <br>Team  Management - Team Building</p>
+                    <div class="list">
+                    <i class="fal fa-check"></i> <p>This course will help you become a successful team manager.</p>
+                   </div>
+                   <div class="list">
+                    <i class="fal fa-check"></i> <p>This course will help you understand how to manage people and get what you want from your team.</p>
+                   </div>
+                   <div class="list">
+                    <i class="fal fa-check"></i> <p>This course will help you gain good management skills so you can progress in your career.</p>
+                   </div>
+                   <input type="button" value="Cart" class="cart"> 
+                </div>
+                
+                <img src="img/course1.png">
+                
                 <h4>Management Skills-Dream <br>
                   Leadership masterclass
                 </h4>
@@ -87,9 +106,11 @@
                 </div>
                 <h6>$29</h6>
                 <p class="rate2">Bestseller</p> 
-            </div>
+            
+          </div>
+        <div class="ad1">
             <div class="modal">
-                <h1>Management Skills <br> Leadership Skills class</h1>
+                <h1>Library Management <br> Master Skills class</h1>
                 <p class="rate2">Bestseller</p> 
                 <p class="rate-content">Leadership & Management Skills - Change <br>Management - Lean  BPM Management Skills - <br>Team  Management - Team Building</p>
                 <div class="list">
@@ -103,12 +124,9 @@
                </div>
                <input type="button" value="Cart" class="cart"> 
             </div>
-        </div>
-        <div class="ad2">
-            <img src="img/course2.jpg" width="240px" height="150px" >
+            <img src="img/course2.jpg">
             <div class="advert">
-            <h4>Management Skills-Dream <br>
-              Leadership masterclass
+            <h4>Informaion Analyst <br> Leadership masterclass
             </h4>
             <p>Mark Timberlake, Stephen Matter</p>
             <div class="rating">
@@ -125,8 +143,23 @@
             <p class="rate2">Bestseller</p> 
         </div>
     </div>
-    <div class="ad3">
-        <img src="img/course3.png" width="240px" height="150px" >
+    <div class="ad1">
+        <div class="modal">
+            <h1>Management Skills <br> Leadership Skills class</h1>
+            <p class="rate2">Bestseller</p> 
+            <p class="rate-content">Leadership & Management Skills - Change <br>Management - Lean  BPM Management Skills - <br>Team  Management - Team Building</p>
+            <div class="list">
+            <i class="fal fa-check"></i> <p>This course will help you become a successful team manager.</p>
+           </div>
+           <div class="list">
+            <i class="fal fa-check"></i> <p>This course will help you understand how to manage people and get what you want from your team.</p>
+           </div>
+           <div class="list">
+            <i class="fal fa-check"></i> <p>This course will help you gain good management skills so you can progress in your career.</p>
+           </div>
+           <input type="button" value="Cart" class="cart"> 
+        </div>
+        <img src="img/course3.png" >
         <div class="advert">
         <h4>Management Skills-Dream <br>
           Leadership masterclass
@@ -146,53 +179,10 @@
         <p class="rate2">Bestseller</p> 
     </div>
 </div>
-<div class="ad4">
-    <img src="img/course4.jpg" width="240px" height="150px" >
-    <div class="advert">
-    <h4>Management Skills-Dream <br>
-      Leadership masterclass
-    </h4>
-    <p>Mark Timberlake, Stephen Matter</p>
-    <div class="rating">
-        <p  class="rate1">4.3</p>
-        <div class="rate-icon">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-    </div>
-    <h6>$29</h6>
-    <p class="rate2">Bestseller</p> 
-</div>
-</div>
-<div class="ad5">
-    <img src="img/course5.png" width="240px" height="150px" >
-    <div class="advert">
-    <h4>Management Skills-Dream <br>
-      Leadership masterclass
-    </h4>
-    <p>Mark Timberlake, Stephen Matter</p>
-    <div class="rating">
-        <p  class="rate1">4.3</p>
-        <div class="rate-icon">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-    </div>
-    <h6>$29</h6>
-    <p class="rate2">Bestseller</p> 
-</div>
-</div>
-        </div>
-    </section>
-    <section class="modal-pop-up">
-        <!-- <div class="modal">
-        <h1>Management Skills <br> Leadership Skills class</h1>
+<div class="ad1">
+    <div class="modal-2">
+        <h1>Accountancy-Dream <br> ICAN-Lagos for 2021
+            
         <p class="rate2">Bestseller</p> 
         <p class="rate-content">Leadership & Management Skills - Change <br>Management - Lean  BPM Management Skills - <br>Team  Management - Team Building</p>
         <div class="list">
@@ -205,7 +195,64 @@
         <i class="fal fa-check"></i> <p>This course will help you gain good management skills so you can progress in your career.</p>
        </div>
        <input type="button" value="Cart" class="cart"> 
-    </div> -->
+    </div>
+    <img src="img/course4.jpg">
+    <div class="advert">
+    <h4>Management Skills-Dream <br>
+      Leadership masterclass
+    </h4>
+    <p>Mark Timberlake, Stephen Matter</p>
+    <div class="rating">
+        <p  class="rate1">4.3</p>
+        <div class="rate-icon">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+    </div>
+    <h6>$29</h6>
+    <p class="rate2">Bestseller</p> 
+</div>
+</div>
+<div class="ad1">
+    <div class="modal-2">
+        <h1>Entrepreneur Skills <br> 2021 Master Class</h1>
+        <p class="rate2">Bestseller</p> 
+        <p class="rate-content">Leadership & Management Skills - Change <br>Management - Lean  BPM Management Skills - <br>Team  Management - Team Building</p>
+        <div class="list">
+        <i class="fal fa-check"></i> <p>This course will help you become a successful team manager.</p>
+       </div>
+       <div class="list">
+        <i class="fal fa-check"></i> <p>This course will help you understand how to manage people and get what you want from your team.</p>
+       </div>
+       <div class="list">
+        <i class="fal fa-check"></i> <p>This course will help you gain good management skills so you can progress in your career.</p>
+       </div>
+       <input type="button" value="Cart" class="cart"> 
+    </div>
+    <img src="img/course5.png">
+    <div class="advert">
+    <h4>Management Skills-Dream <br>
+      Leadership masterclass
+    </h4>
+    <p>Mark Timberlake, Stephen Matter</p>
+    <div class="rating">
+        <p  class="rate1">4.3</p>
+        <div class="rate-icon">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+    </div>
+    <h6>$29</h6>
+    <p class="rate2">Bestseller</p> 
+</div>
+</div>
+        </div>
     </section>
   
 </body>
